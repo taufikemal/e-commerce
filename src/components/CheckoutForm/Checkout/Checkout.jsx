@@ -7,6 +7,8 @@ import AddressForm from '../AddressForm';
 import PaymentForm from '../PaymentForm';
 import useStyles from './styles';
 
+import '../../../assets/c-1.svg';
+
 const steps = ['Shipping address', 'Payment details'];
 
 const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
@@ -74,6 +76,7 @@ const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
   return (
     <>
       <CssBaseline />
+      <img src={"https://freesvg.org/img/Prismatic-Shopping-Cart-Icon-3.png"} />
       <div className={classes.toolbar} />
       <main className={classes.layout}>
         <Paper className={classes.paper}>
